@@ -1,8 +1,120 @@
+/* ========================================================= universal styles ========================================================== */
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
-    background-image: ;
+    background-image: url("../images/fondo_body.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+/* ================================================================== nav ================================================================= */
+nav {
+    display: flex;
+    background-image: linear-gradient(to left, rgb(1,155,242), white);
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgb(255, 200, 200);
+}
+
+nav div{
+    display: flex;
+    gap: 70px;
+}
+
+img{
+    width: 100px;
+}
+
+/* .nav_section_1{
+    display: none;
+}
+
+.products:hover + .nav_section_1{
+    display: block;
+    background-color: red;
+} */
+/* ================================================================ main ================================================================ */
+main{
+    margin: 150px 0 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.font_styles{
+    font-size: 2rem;
+    color: rgb(49, 179, 255);
+    color: rgb(154, 151, 151);
+}
+
+.section_services{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border-color: rgb(1,155,242);
+    border-width: 2px;
+    border-style:solid;
+    box-shadow: 4px 4px 10px gray;
+    /* border: groove blue 30px; */
+    height: 30vh;
+    width: 50vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.div_services{
+    display: flex;
+    justify-content: space-around; 
+    /* gap: 100px; */
+}
+
+.section_button{
+    text-decoration:none;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 25px;
+    background-color: rgb(1,155,242);
+    border-radius: 20px;
+    width: 150px;
+}
+
+h3, h4{
+    text-align: center;
+}
+
+#section_suggestions{
+    background-color: red;
+    width: 80vw;
+    height: 500px;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+#div_suggestions_1{
+    background-image: url(../images/conecta3.jpg);
+    width: 400px;
+}
+
+#div_suggestions_2{
+    background-image: url(../images/detalle.jpg);
+    width: 400px;
+}
+
+#div_suggestions_3{
+    background-image: url(../images/compartir.jpg);
+    width: 400px;
+}
+/* ================================================================ footer ================================================================ */
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+    background-image: linear-gradient(to left, rgb(1,155,242), white);
 }
